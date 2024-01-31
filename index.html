@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>GROSIR GEMILANG</title>
+    <link rel="realsheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navigarion-grocery">
-        <img src="your-logo.png" alt="Logo" class="logo">
-        <ul class="navigation-item">
-            <li>Home</li>
-            <li>Our Product</li>
-            <li>Contact Us</li>    
-        </ul>
-    </nav>
+
     <header>
-        <h1> Hello Welcome to E Grocery Site</h1>
-        <img src="assets/grocery.png" alt="Grocery Img">
+        <nav>
+            <h3>GROSIR GEMILANG</h3>
+            <ul class="navigationlink">
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#ourproduct"> Our Product</a></li>
+                <li> <a href="#callus">Call Us</a></li> 
+            </ul>
+            <div class="hamburgermenu">&#6834;</div>
+        </nav>
+        <hr>
     </header>
-    <div class="our-product">
-        <div>
-            <div class="circle"></div>
-            <p>Terdiri dari  Sayuran dan Buah-buahan</p>
+
+    <main class="main">
+        <section id="home">
+            <div class="header" >
+                <p class="judul">Toko Terbaik Grosir Sayuran dan Buah-buahan</p>
+                <p class="teks">"Selalu menyediakan product dengan kualitas terbaik"</p>
+            </div>
+        </section>
+
+        <section class="body">
+            <div class="data1">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="assets/pngtree-supermarket-clipart-cartoon-grocery-store-with-fruits-and-vegetables-vector-png-image_6825233.png" width="80%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/045182300_1569136693-Benarkah-Sayuran-Organik-Lebih-Sehat-By-marcin-jucha-Shutterstock.jpg" width="80%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/buah.jpg" widht="80%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/buah sayuran 1.jpg" width="80%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="ourproduct">
+            <section class="kesatu">
+                <div class="satudulu">
+                    <p>Our Product</p>
+                </div>
+                <div class="mywebsite">
+                    <div class="Product1">
+                        <img src="assets/045182300_1569136693-Benarkah-Sayuran-Organik-Lebih-Sehat-By-marcin-jucha-Shutterstock.jpg" alt="">
+                        <p class="namaproduct">Sayuran Organik</p>
+                        <p class="spesifikasi">Bit, Daun Bawang, Sawi Putih, Ubi, Buncis, Wortel, Asparagus, Tomat Ceri, dan Apricot.</p>
+                    </div>
+                    <div class="product2">
+                        <img src="assets/buah.jpg" alt="">
+                        <p class="namaproduct"> Buah Segar</p>
+                        <p class="spesifikasi">Pisang Raja, Nanas, Apel, Peach, Jeruk, Lemon, Buah Naga, Kiwi, Anggur Hijau, dan Alpukat.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <div>
-            <div> class=circle>"</div>
-            <p>Terdiri dari Sayuran dan Buah-buahan</p>
-        </div>
-
-        <div> 
-            <div class="Inquerity-customer"></div>
-        
-        </div>
-
-    </div>
-
+        <section class="data" id="contact">
+            <div class="penegasan">
+                <h3>Jangan menunggu lebih lama!</h3>
+                <p>Segera tumbuhkan kesadaran diri untuk cermat dengan memilih makanan sehat yang mendukung kesehatan Anda!</p>
+            </div>
+            <div class="infopelanggan">
+                <h3>Call Us</h3>
+                <form id="form" action="">
+                    <span id="name-error" class="error"></span>
+                    <input type="text" id="name" placeholder="Ketikkan Nama Anda">
+                    <span id="email-error" class="error"></span>
+                    <input type="email" id="email" placeholder="Ketikkan Email Anda">
+                    <span id="telepon-error" class="error"></span>
+                    <input type="number" id="telepon" placeholder="Ketikkan Nomor Telepon Anda">
+                    <span id="pesanError" class="error"></span>
+                    <textarea id="message" cols="25" rows="10" placeholder="Silakan tulis pesan Anda"></textarea>
+                    <button type="button" onclick="validateForm()">Submit</button>
+                </form>
+            </div>
+        </section>          
+    </main>
+    <footer class="footer">
+        <section class="terms">
+            <p>Terms of Service</p>&nbsp;&nbsp;&nbsp;
+            <p>Privasi Policy</p>&nbsp;&nbsp;&nbsp;
+            <p>@Amara Soniaji2024</p>
+        </section>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
